@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inner-card {
+    /* background-color: #ff0000; */
+    padding: 2em 5em;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: -2em;
+    gap: 20px;
+}
+
+ul li button {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.bulbon {
+    display: none;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./java ass.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="inner-card">
+            <img src="./pic_bulboff.gif" alt="" id="bulbon">
+            <img class="bulbon" src="./pic_bulbon.gif" alt="" id="bulboff">
+            <ul>
+                <li><button onclick="on()">ON</button></li>
+                <li><button onclick="off()">OFF</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // function imageChange() {
+        //     var on = image.source;
+        //     result.innerSource = imageChange;
+        // }
+
+        // function changeImage() {
+        //     if (image.src.ON)
+        //         result.image.changeImage = (. / pic_bulbon.gif)
+        // }
+
+        function on() {
+            var on = document.getElementById('bulbon');
+            var off = document.getElementById('bulboff');
+            if (on) {
+                on.style.display = "none";
+                off.style.display = "block";
+            } else {
+                on.style.display = "block";
+                off.style.display = "none";
+            }
+        }
+
+        function off() {
+            var on = document.getElementById('bulbon');
+            var off = document.getElementById('bulboff');
+            if (off) {
+                on.style.display = "block";
+                off.style.display = "none";
+            } else {
+
+                on.style.display = "none";
+                off.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
